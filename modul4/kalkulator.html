@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kalkulator Sederhana</title>
+    <script src="kalkulator.js"></script>
+  </head>
+  <body>
+    <h1>Kalkulator Sederhana</h1>
+
+    <label for="bil1">Bilangan 1:</label>
+    <input type="text" id="bil1" />
+    <br />
+    <br />
+    <label for="operator">Operator:</label>
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="x">x</option>
+      <option value="/">/</option>
+    </select>
+    <br />
+    <br />
+    <label for="bil2">Bilangan 2:</label>
+    <input type="text" id="bil2" />
+
+    <button onclick="hitung()">Hitung</button>
+    <br />
+    <br />
+    <label for="hasil">Hasil:</label>
+    <input type="text" id="hasil" disabled />
+  </body>
+</html>

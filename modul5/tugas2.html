@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubah Warna Kotak</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: #eeff6f;
+        margin: 10px;
+        cursor: pointer;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".box").dblclick(function () {
+          var randomColor =
+            "#" + Math.floor(Math.random() * 16777215).toString(16);
+          $(this).css("background-color", randomColor);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>

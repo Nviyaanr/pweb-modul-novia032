@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tampilkan/Sembunyikan Gambar</title>
+    <style>
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .image-container .image {
+        width: 200px;
+        height: 110px;
+        object-fit: cover;
+        margin: 10px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".image").show();
+
+        $(".show-all").click(function () {
+          $(".image").show("slow");
+        });
+
+        $(".hide-all").click(function () {
+          $(".image").hide("slow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="button-container">
+      <button class="show-all">Tampilkan</button>
+      <button class="hide-all">Sembunyikan</button>
+    </div>
+
+    <div class="image-container">
+      <img src="images/fish.jpeg" alt="Gambar 1" class="image" />
+      <img src="images/buah.jpeg" alt="Gambar 2" class="image" />
+      <img src="images/sayur.jpeg" alt="Gambar 3" class="image" />
+    </div>
+  </body>
+</html>

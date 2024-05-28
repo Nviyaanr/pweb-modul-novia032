@@ -1,0 +1,32 @@
+/* CSS Home */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #f272c5;
+}
+
+h2 {
+  color: #e181f2;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #e181f2;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-button:hover {
+  background-color: #f272c5;
+}
